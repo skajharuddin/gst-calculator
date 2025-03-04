@@ -16,6 +16,10 @@ showButton.addEventListener('click', () => {
   // gst percent
   document.querySelector('#gst-percent').innerHTML = gstPer;
 
+    // gst-amount
+  let gst_actual_amount = gstAmount - math;
+  document.querySelector('#gst-money').innerHTML = gst_actual_amount;
+
   // amount including gst
   document.querySelector('#totalamt').innerHTML = gstAmount;
 
