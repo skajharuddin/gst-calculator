@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GST Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="gstCalculator-heading">GST Calculator</h1>
+
+    <div class="gst-calculation-div">
+      <label for="gst-amt">
+        Enter total amount including GST : <input type="text" id="gst-amt" />
+      </label>
+      <br />
+      <br />
+      <label for="gst-per">
+        Enter GST percent : <input type="text" id="gst-per" />
+      </label>
+
+      <button id="show-less-gst-amt">Show Amount</button>
+
+      <!-- result -->
+      <hr />
+      <h2>Result</h2>
+      <div class="resultDiv" style="display: none">
+        <p id="showResult">
+          Amount excluding GST is : <span id="less-gst-amt"></span>. <br />
+          GST : <span id="gst-percent"></span>%. <br />
+          Amount including GST : <span id="totalamt"></span>.
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
