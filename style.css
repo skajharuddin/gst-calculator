@@ -1,0 +1,34 @@
+body {
+  background-color: #f1f1f1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+}
+
+label,
+p,
+input {
+  font-size: 20px;
+}
+
+.gstCalculator-heading {
+  text-align: center;
+}
+
+.gst-calculation-div {
+  width: 70%;
+  margin: auto;
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+}
+
+#less-gst-amt {
+  background-color: green;
+  color: white;
+}
