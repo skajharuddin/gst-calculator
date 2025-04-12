@@ -1,34 +1,140 @@
-body {
-  background-color: #f1f1f1;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 100%;
-}
+    
+  * {
+    box-sizing: border-box;
+  }
 
-label,
-p,
-input {
-  font-size: 20px;
-}
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 
-.gstCalculator-heading {
-  text-align: center;
-}
+  .container {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
 
-.gst-calculation-div {
-  width: 70%;
-  margin: auto;
-  background-color: antiquewhite;
-  padding: 20px;
-  border-radius: 10px;
-}
+  h1 {
+    text-align: center;
+    color: #3e64ff;
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
 
-button {
-  width: 100px;
-  height: 35px;
-  cursor: pointer;
-}
+  label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+  }
 
-#less-gst-amt {
-  background-color: green;
-  color: white;
-}
+  input,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+  }
+
+  input:focus,
+  select:focus {
+    border-color: #3e64ff;
+    outline: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3e64ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2d4ccc;
+  }
+
+  .resultDiv {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #3e64ff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .resultDiv h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .copyable {
+    background-color: tomato;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .copy-note {
+    font-size: 12px;
+    color: #777;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .container {
+      padding: 18px;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    input,
+    select,
+    button {
+      font-size: 15px;
+      padding: 12px;
+    }
+
+    .resultDiv h3 {
+      font-size: 18px;
+    }
+
+    .copyable {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .resultDiv {
+      padding: 16px;
+    }
+  }
