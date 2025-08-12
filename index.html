@@ -9,23 +9,27 @@
   <body>
     <div class="container">
       <h1>GST Calculator</h1>
+      <form action="">
+        <label for="gst-amt"> Total amount including GST: </label>
+        <input type="text" id="gst-amt" placeholder="e.g. 1180" />
 
-      <label for="gst-amt"> Total amount including GST: </label>
-      <input type="text" id="gst-amt" placeholder="e.g. 1180" />
+        <label for="gst-per"> GST percent: </label>
+        <select id="gst-per">
+          <option value="">Select</option>
+          <option value="5">5%</option>
+          <option value="12">12%</option>
+          <option value="18" selected>18%</option>
+          <option value="28">28%</option>
+        </select>
 
-      <label for="gst-per"> GST percent: </label>
-      <select id="gst-per">
-        <option value="">Select</option>
-        <option value="5">5%</option>
-        <option value="12">12%</option>
-        <option value="18" selected>18%</option>
-        <option value="28">28%</option>
-      </select>
+        <label for="product-rate"> Product rate (Rs.): </label>
+        <input type="text" id="product-rate" placeholder="e.g. 590" />
 
-      <label for="product-rate"> Product rate (Rs.): </label>
-      <input type="text" id="product-rate" placeholder="e.g. 590" />
-
-      <button id="show-less-gst-amt">Calculate</button>
+        <div class="flex">
+          <button class="btn-left" type="button" id="show-less-gst-amt">Calculate</button>
+          <button class="btn-right" type="reset">Reset</button>
+        </div>
+      </form>
 
       <div class="resultDiv" style="display: none">
         <h3>Calculation Result:</h3>
