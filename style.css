@@ -111,6 +111,10 @@ button:hover {
   background-color: orange;
 }
 
+.btn-right:hover {
+  background-color: rgb(218, 143, 5);
+}
+
 /* Responsive styles */
 @media (max-width: 600px) {
   .container {
