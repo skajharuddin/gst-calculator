@@ -108,6 +108,7 @@ button:hover {
 
 .btn-right {
   margin-left: 3px;
+  background-color: orange;
 }
 
 /* Responsive styles */
