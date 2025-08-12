@@ -19,7 +19,7 @@ showButton.addEventListener('click', () => {
 
   // gst-amount
   let gst_actual_amount = gstAmount - math;
-  document.querySelector('#gst-money').innerHTML = gst_actual_amount
+  document.querySelector('#gst-money').innerHTML = gst_actual_amount;
   // amount including gst
   document.querySelector('#totalamt').innerHTML = gstAmount;
 
@@ -31,18 +31,20 @@ showButton.addEventListener('click', () => {
   // calculating product quantity
   let quantity = math / product_rate;
   document.querySelector('#productQty').innerHTML = quantity.toFixed(3); // toFixed is used to limit the decimal points.
-  
-// displaying product rate
+
+  // displaying product rate
   document.querySelector('#prod_rate').innerHTML = product_rate;
 });
 
-
 // decalration of a function for copy to clipboard
 function copyToClipboard(element) {
-      const text = element.innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        alert("✅ কপি হয়ে গেছে: " + text);
-      }).catch(err => {
-        alert("❌ কপি করা যায়নি: " + err);
-      });
-    }
+  const text = element.innerText;
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      alert('✅ কপি হয়ে গেছে: ' + text);
+    })
+    .catch((err) => {
+      alert('❌ কপি করা যায়নি: ' + err);
+    });
+}
