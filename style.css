@@ -169,6 +169,10 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 600px) {
+  nav {
+    position: sticky;
+  }
+
   body {
     height: 100vh;
     display: grid;
