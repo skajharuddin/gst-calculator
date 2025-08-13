@@ -48,3 +48,8 @@ function copyToClipboard(element) {
       alert('❌ কপি করা যায়নি: ' + err);
     });
 }
+
+// copyright year adding using functions in html file
+
+let yearSpan = document.querySelector('#setYear');
+yearSpan.innerText = new Date().getFullYear();
