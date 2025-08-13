@@ -159,12 +159,15 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 600px) {
-  .container {
-    width: 90%;
-    margin: auto;
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
   }
 
   .container {
+    width: 90%;
+    margin: auto;
     padding: 18px;
   }
 
