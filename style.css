@@ -160,6 +160,11 @@ footer {
 /* Responsive styles */
 @media (max-width: 600px) {
   .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .container {
     padding: 18px;
   }
 
@@ -185,6 +190,11 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
   body {
     font-size: 15px;
   }
